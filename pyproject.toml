@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text-stats"
+version = "0.1.0"
+description = "Text statistics CLI: lines, words, characters, top words, reading time"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Jalal Khan" }]
+
+[project.scripts]
+text-stats = "text_stats.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["text_stats*"]
